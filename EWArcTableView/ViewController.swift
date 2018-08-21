@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         
         tableView.separatorStyle = .none;
         tableView.isOpaque = false;
+        /// 修改cell高度要同时修改rowHeight
         tableView.rowHeight = 90
         tableView.dataSource = self
         tableView.delegate = self
