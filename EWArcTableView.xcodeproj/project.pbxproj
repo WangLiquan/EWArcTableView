@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7950760F2133E1720051B366 /* EWArcTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950760D2133E1720051B366 /* EWArcTableView.swift */; };
+		795076102133E1720051B366 /* EWArcTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950760E2133E1720051B366 /* EWArcTableViewCell.swift */; };
 		79A9AB26212ACA990011243E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9AB25212ACA990011243E /* AppDelegate.swift */; };
 		79A9AB28212ACA990011243E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9AB27212ACA990011243E /* ViewController.swift */; };
 		79A9AB2B212ACA990011243E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A9AB29212ACA990011243E /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7950760D2133E1720051B366 /* EWArcTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWArcTableView.swift; sourceTree = "<group>"; };
+		7950760E2133E1720051B366 /* EWArcTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWArcTableViewCell.swift; sourceTree = "<group>"; };
 		79A9AB22212ACA990011243E /* EWArcTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EWArcTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A9AB25212ACA990011243E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79A9AB27212ACA990011243E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 		79A9AB24212ACA990011243E /* EWArcTableView */ = {
 			isa = PBXGroup;
 			children = (
+				7950760D2133E1720051B366 /* EWArcTableView.swift */,
+				7950760E2133E1720051B366 /* EWArcTableViewCell.swift */,
 				79A9AB25212ACA990011243E /* AppDelegate.swift */,
 				79A9AB27212ACA990011243E /* ViewController.swift */,
 				79A9AB29212ACA990011243E /* Main.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795076102133E1720051B366 /* EWArcTableViewCell.swift in Sources */,
 				79A9AB28212ACA990011243E /* ViewController.swift in Sources */,
 				79A9AB26212ACA990011243E /* AppDelegate.swift in Sources */,
+				7950760F2133E1720051B366 /* EWArcTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
