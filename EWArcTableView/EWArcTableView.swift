@@ -54,9 +54,7 @@ class EWArcTableView: UITableView {
     func setupShapeFormationInVisibleCells(){
         let indexpaths: Array = self.indexPathsForVisibleRows!
         let totalVisibleCells = indexpaths.count
-
         let angle_gap = CGFloat(.pi / Double(mTotalCellsVisible + 1))
-
         let vRadius = (self.frame.size.height - self.rowHeight * 2.0) / 2.0
         let hRadius = self.frame.size.height / 2.0
         let radius = vRadius < hRadius ? vRadius : hRadius
@@ -67,11 +65,9 @@ class EWArcTableView: UITableView {
         for i in 0..<totalVisibleCells{
             let cell: UITableViewCell = self.cellForRow(at: indexpaths[i] )!
             var frame: CGRect = cell.frame
-
             var angle = firstCellAngle
             firstCellAngle += angle_gap
             angle -= .pi/2
-
             let x = xRadius * CGFloat(cosf(Float(angle)))
             // 适配
             frame.origin.x = x - 90 + (812 - UIScreen.main.bounds.height) * 95/145
