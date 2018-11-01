@@ -12,20 +12,20 @@ class EWArcTableViewCell: UITableViewCell {
 
     static let identifier = "EWArcTableViewCell"
     
-    let personHeadImageView: UIImageView = {
+    private let personHeadImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 90, height: 90))
         imageView.layer.cornerRadius = 45
         imageView.layer.masksToBounds = true
         return imageView
     }()
-    let rightDetailView: UIView = {
+    private let rightDetailView: UIView = {
         let view = UIView(frame: CGRect(x: 30, y: 0, width: 210, height: 80))
         view.backgroundColor = UIColor(red: 158/255, green: 154/255, blue: 200/255, alpha: 1)
         view.layer.cornerRadius = 40
         view.layer.masksToBounds = true
         return view
     }()
-    let personNameLabel: UILabel = {
+    private let personNameLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 97, y: 0, width: 125, height: 80))
         label.textColor = UIColor.white
         label.font = UIFont.systemFont(ofSize: 16)

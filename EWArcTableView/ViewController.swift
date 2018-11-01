@@ -10,16 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let tableView =  EWArcTableView(frame: CGRect(x: 0, y: 0, width: ScreenInfo.Width, height: ScreenInfo.Height), style: .plain)
-
-    let personNameArray = ["刘一","陈二","张三","李四","王五","赵六","孙七","周八","吴九","郑十"]
+    private let tableView =  EWArcTableView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width , height: UIScreen.main.bounds.size.height), style: .plain)
+    private let personNameArray = ["刘一","陈二","张三","李四","王五","赵六","孙七","周八","吴九","郑十"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         drawMyView()
     }
 
-    func drawMyView(){
+    private func drawMyView(){
         self.view.addSubview(tableView)
         
         tableView.separatorStyle = .none;
@@ -36,12 +35,6 @@ class ViewController: UIViewController {
         tableView.showsVerticalScrollIndicator = false;
         tableView.register(EWArcTableViewCell.self, forCellReuseIdentifier: EWArcTableViewCell.identifier)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
 extension ViewController:UITableViewDelegate,UITableViewDataSource{
