@@ -7,3 +7,6 @@ swift左侧弧形tableView
 可增加中间cell最大,上下端cell依次变小的效果.
 
 ![效果图预览](https://github.com/WangLiquan/EWArcTableView/raw/master/images/demonstration.gif)
+
+# 另:
+OC版传送门:[EWArcTableView-OC](https://github.com/WangLiquan/EWArcTableView-OC/)
