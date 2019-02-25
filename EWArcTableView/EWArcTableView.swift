@@ -25,7 +25,7 @@ class EWArcTableView: UITableView {
      @param yOffset tableView.contentOffset.y
      @return 第一个Cell的X轴偏移量
      */
-    private func getAngleForYOffset(yOffset: CGFloat) -> CGFloat{
+    private func getAngleForYOffset(yOffset: CGFloat) -> CGFloat {
         /// 运用三角函数知识,如果不了解就不用看了.直接拿来用
         let shift: CGFloat = CGFloat(Int(self.contentOffset.y) % Int(self.rowHeight))
         let percentage: CGFloat = shift / self.rowHeight
@@ -45,7 +45,7 @@ class EWArcTableView: UITableView {
     /**
      在layOutSubViews时调用,为每个Cell重新赋frame.origin.x值,达到弧形展示效果
      */
-    private func setupShapeFormationInVisibleCells(){
+    private func setupShapeFormationInVisibleCells() {
         /// 能在页面展示的所有cell.indexPath
         let indexpaths: Array = self.indexPathsForVisibleRows!
         let totalVisibleCells = indexpaths.count
@@ -57,7 +57,7 @@ class EWArcTableView: UITableView {
         let xRadius = radius - 100
         var firstCellAngle: CGFloat = self.getAngleForYOffset(yOffset: self.contentOffset.y)
         // 通过循环获取展示的所有Cell,依次赋值
-        for i in 0..<totalVisibleCells{
+        for i in 0..<totalVisibleCells {
             let cell: UITableViewCell = self.cellForRow(at: indexpaths[i] )!
             var frame: CGRect = cell.frame
             var angle = firstCellAngle

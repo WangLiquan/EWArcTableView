@@ -11,7 +11,7 @@ import UIKit
 class EWArcTableViewCell: UITableViewCell {
 
     static let identifier = "EWArcTableViewCell"
-    
+
     private let personHeadImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 90, height: 90))
         imageView.layer.cornerRadius = 45
@@ -48,7 +48,7 @@ class EWArcTableViewCell: UITableViewCell {
         self.addSubview(personHeadImageView)
     }
 
-    func setPersonModel(personHeaderImage: String, personName: String){
+    func setPersonModel(personHeaderImage: String, personName: String) {
         self.personNameLabel.text = personName
         self.personHeadImageView.image = UIImage(named: personHeaderImage)
     }

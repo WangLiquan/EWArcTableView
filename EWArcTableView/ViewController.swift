@@ -18,11 +18,11 @@ class ViewController: UIViewController {
         drawMyView()
     }
 
-    private func drawMyView(){
+    private func drawMyView() {
         self.view.addSubview(tableView)
-        
-        tableView.separatorStyle = .none;
-        tableView.isOpaque = false;
+
+        tableView.separatorStyle = .none
+        tableView.isOpaque = false
         /// 修改cell高度要同时修改rowHeight
         tableView.rowHeight = 90
         tableView.dataSource = self
@@ -31,13 +31,13 @@ class ViewController: UIViewController {
         tableView.estimatedRowHeight = 0
         tableView.estimatedSectionHeaderHeight = 0
         tableView.estimatedSectionFooterHeight = 0
-        tableView.showsHorizontalScrollIndicator = false;
-        tableView.showsVerticalScrollIndicator = false;
+        tableView.showsHorizontalScrollIndicator = false
+        tableView.showsVerticalScrollIndicator = false
         tableView.register(EWArcTableViewCell.self, forCellReuseIdentifier: EWArcTableViewCell.identifier)
     }
 }
 
-extension ViewController:UITableViewDelegate,UITableViewDataSource{
+extension ViewController:UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
     }
