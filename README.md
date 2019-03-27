@@ -1,5 +1,5 @@
 # EWArcTableView
-swift左侧弧形tableView
+Swift左侧弧形tableView
 
 # 实现效果:
 左侧有弧形区域的tableview,实现简单屏幕适配,可修改弧度和cell高度.
